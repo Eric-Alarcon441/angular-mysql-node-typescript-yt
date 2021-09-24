@@ -49,7 +49,7 @@ class GamesController {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
             yield database_1.default.query("update games set ? where id = ?", [req.body, id]);
-            res.json({ text: "updating a game number: " + req.params.id });
+            res.json({ text: "updating a game number: " + id });
         });
     }
 }

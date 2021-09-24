@@ -1,0 +1,37 @@
+GET http://localhost:3000/api/games HTTP/1.1
+
+###
+GET http://localhost:3000/api/games/1 HTTP/1.1
+
+###
+POST http://localhost:3000/api/games HTTP/1.1
+content-type: application/json
+
+{
+    "title": "COD",
+    "description": "Es un juego de guerra",
+    "image": "https://cdn1.dotesports.com/wp-content/uploads/sites/4/2020/10/03111042/call-of-duty-mobile-1.jpg"
+}
+###
+POST http://localhost:3000/api/games HTTP/1.1
+content-type: application/json
+
+{
+    "title": "God of war 4",
+    "description": "Es un juego exclusivo de ps4",
+    "image": "https://ecsonyb2c.vteximg.com.br/arquivos/ids/244767-1000-1000/Copia-de-GODOFWAR_HITS_Central.png?v=637388971011230000"
+}
+
+###
+
+DELETE http://localhost:3000/api/games/1 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/games/2 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "God of war 4",
+    "description": "Es un juego exclusivo de ps4 y el mas vendido",
+    "image": "https://ecsonyb2c.vteximg.com.br/arquivos/ids/244767-1000-1000/Copia-de-GODOFWAR_HITS_Central.png?v=637388971011230000"
+}
